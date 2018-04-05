@@ -1,0 +1,8 @@
+COMPILATION:
+	needs c++ 11 
+	make clean
+	make
+
+RUN
+./main radius 2
+ 
