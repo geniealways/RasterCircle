@@ -12,10 +12,10 @@ class Raster
 	Raster& operator=(const Raster&); // Not defined elsewhere
 	Raster(const Raster&); // Not defined elsewhere
  	void set(int x, int y); // please define
-
+	int radius;
    public:
 	Raster(unsigned int a_DimX, unsigned int a_DimY);
-	int drawCircle (int radius);
+	int initCircle (int radius);
 	
    
 };
