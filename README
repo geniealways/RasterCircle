@@ -3,6 +3,20 @@ COMPILATION:
 	make clean
 	make
 
-RUN
+OS and Hardware: ubuntu 16.04 on INtel NUC Quard Core i7 processor
+
+RUN EXAMPLE:
 ./main radius 2
+
+CREATE TEST CASES: This creates a file named "radius<value>.test". The first line of the file is radius and subsequent lines are the byte values of the result vector that represent out Raster. We can verify this against any test when we draw the cirle.   
+ ./main -createtest -radius <value> 
+example: ./main -createtest -radius 75 
+
  
+RUN TEST CASES FROM GENERATED TEST FILE:
+./main -runtest <filename>
+example: ./main -runtest radius75.test
+
+
+NOTE/ASSUMPTION:
+I have used integers and not long for all calculations given the application we cannot print a huge circle without the points overlapping.

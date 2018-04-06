@@ -1,5 +1,5 @@
 CC=g++
-CPPFLAGS=-std=c++11 -I.
+CPPFLAGS=-std=c++11 -g3 -I.
 DEPS = Raster.h 
 
 %.o: %.c %.cpp $(DEPS)
