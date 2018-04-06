@@ -15,7 +15,7 @@ class Raster
 	int radius;
    public:
 	Raster(unsigned int a_DimX, unsigned int a_DimY);
-	int initCircle (int radius);
-	
+	void initCircle(int radius);
+	void drawCircle();	
    
 };

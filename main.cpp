@@ -19,7 +19,8 @@ int main(int argc, char* argv[]) {
 		}
 		int radius = atoi(argv[2]);
 		Raster r (2*radius+1, 2*radius+1);
-		return r.initCircle (radius);
+		int ret = r.initCircle (radius);
+		r.drawCircle();
 
 	}
 	return 1;
